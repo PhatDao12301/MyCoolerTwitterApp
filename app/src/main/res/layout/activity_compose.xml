@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_compose"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/holo_blue_light"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/lnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvCompose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/normal_padding"
+            android:text="@string/tweeting"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/super_large_size" />
+
+        <EditText
+            android:id="@+id/etCompose"
+            android:layout_width="@dimen/text_width"
+            android:layout_height="@dimen/text_height"
+            android:gravity="top"
+            android:hint="@string/what_are_you_doing" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivTweet"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tweet_icon_height"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:src="@drawable/tweet" />
+
+            <ImageView
+                android:id="@+id/ivCancel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tweet_icon_height"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:src="@drawable/button_cancel" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
